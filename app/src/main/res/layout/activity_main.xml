@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.polihack2.MainActivity">
+
+    <TextView
+        android:layout_width="361dp"
+        android:layout_height="152dp"
+        android:fontFamily="@font/minecraft_font"
+        android:gravity="center"
+        android:text="BUG SQUASHERS"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_extralarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="459dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="224dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/minecraft_font"
+        android:text="LOGIN"
+        android:textColor="#1E90FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchtheme"
+        android:layout_width="140dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="701dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/minecraft_font"
+        android:text="Dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
