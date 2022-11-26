@@ -1,5 +1,6 @@
 package com.example.polihack2
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         val buttonlogin = findViewById(R.id.buttonlogin) as Button
         buttonlogin.setOnClickListener{
             intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+        }
+        val buttonregister = findViewById(R.id.buttonregister) as Button
+        buttonregister.setOnClickListener{
+            intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 

@@ -11,7 +11,7 @@
         android:layout_height="152dp"
         android:fontFamily="@font/minecraft_font"
         android:gravity="center"
-        android:text="BUG SQUASHERS"
+        android:text="@string/bug_squashers"
         android:textColor="@color/black"
         android:textSize="@dimen/font_size_extralarge"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,10 +38,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/buttonregister"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/minecraft_font"
+        android:text="REGISTER"
+        android:textColor="#1E90FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+
     <Switch
         android:id="@+id/switchtheme"
         android:layout_width="140dp"
-        android:layout_height="14dp"
+        android:layout_height="48dp"
         android:layout_marginStart="267dp"
         android:layout_marginTop="701dp"
         android:layout_marginEnd="4dp"
