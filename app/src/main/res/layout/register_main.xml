@@ -1,29 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/minecraft_font"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp">
+
+
+    </EditText>
+
+    <EditText
+
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/minecraft_font"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="20dp" />
+
+    <EditText
+
+        android:id="@+id/confpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/minecraft_font"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingBottom="20dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="536dp"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="147dp"
-        android:text="REGISTER"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/black"
+        android:enabled="true"
+        android:fontFamily="@font/minecraft_font"
         android:text="REGISTER"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="65dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textAllCaps="false"
+        android:textColor="#1E90FF"
+        android:textSize="20dp" />
+
+</RelativeLayout>
