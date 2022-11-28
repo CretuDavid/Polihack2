@@ -31,6 +31,9 @@
         <activity
             android:name=".ThirdActivity">
         </activity>
+        <activity
+            android:name=".RegisterActivity">
+        </activity>
 
     </application>
 
